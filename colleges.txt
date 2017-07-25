@@ -1,0 +1,33 @@
+instnm,Applicants total (ADM2015),
+California Polytechnic State University-San Luis Obispo,46820
+California State Polytechnic University-Pomona,33855
+California State University Maritime Academy,1206
+California State University-Bakersfield,8432
+California State University-Channel Islands,9517
+California State University-Chico,22760
+California State University-Dominguez Hills,16018
+California State University-East Bay,14775
+California State University-Fresno,19938
+California State University-Fullerton,41841
+California State University-Long Beach,58109
+California State University-Los Angeles,31855
+California State University-Monterey Bay,15561
+California State University-Northridge,34444
+California State University-Sacramento,22863
+California State University-San Bernardino,13804
+California State University-San Marcos,13718
+California State University-Stanislaus,7081
+Humboldt State University,13018
+San Diego State University,59051
+San Francisco State University,35122
+San Jose State University,30584
+Sonoma State University,15265
+University of California-Berkeley,78893
+University of California-Davis,64602
+University of California-Irvine,71775
+University of California-Los Angeles,92690
+University of California-Merced,18862
+University of California-Riverside,38511
+University of California-San Diego,78061
+University of California-Santa Barbara,70536
+University of California-Santa Cruz,45532
