@@ -1,36 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-<p>hi</p>
-</head>
 <script>
-$(document).ready(function() {
-//     $.ajax({
-//         type: "GET",
-//         url: "colleges.txt",
-//         dataType: "text",
-//         success: function(data) {alert('hi');processData(data);}
-//      });
-    alert('im dumb');
-});
+var collegeList = ["California Polytechnic State University-San Luis Obispo", "California State Polytechnic University-Pomona", "California State University Maritime Academy", "California State University-Bakersfield", "California State University-Channel Islands", "California State University-Chico", "California State University-Dominguez Hills", "California State University-East Bay", "California State University-Fresno","California State University-Fullerton", "California State University-Long Beach", "California State University-Los Angeles", "California State University-Monterey Bay", "California State University-Northridge", "California State University-Sacramento", "California State University-San Bernardino", "California State University-San Marcos", "California State University-Stanislaus", "Humboldt State University", "San Diego State University", "San Francisco State University", "San Jose State University", "Sonoma State University", "University of California-Berkeley", "University of California-Davis", "University of California-Irvine", "University of California-Los Angeles", "University of California-Merced", "University of California-Riverside", "University of California-San Diego", "University of California-Santa Barbara", "University of California-Santa Cruz"];
+var applicantList = [46820, 33855, 1206, 8432, 9517, 22760, 16018, 14775, 19938, 41841, 58109, 31855, 15561, 34444, 22863, 13804, 13718, 7081, 13018, 59051, 35122, 30584, 15265, 78893, 64602, 71775, 92690, 18862, 38511, 78061, 70536, 45532];
+var myResults = [];
 
-function processData(allText) {
-    var allTextLines = allText.split(/\r\n|\n/);
-    var headers = allTextLines[0].split(',');
-    var lines = [];
+               
+function collegeSearch() {
+  // Get user-entered tuition amount
+  var userAnswer = prompt("Around the number of applicants the school should have:")
 
-    for (var i=1; i<allTextLines.length; i++) {
-        var data = allTextLines[i].split(',');
-        if (data.length == headers.length) {
+  for (var i = 0; i < applicantList.length; i++) {
+    
+    if (Math.abs(userAnswer - applicantList[i]) <= 5000)
+      {
+        myResults.push(collegeList[i]);
+      }
+  }
 
-            var tarr = [];
-            for (var j=0; j<headers.length; j++) {
-                tarr.push(headers[j]+":"+data[j]);
-            }
-            lines.push(tarr);
-        }
+  for (var i = 0; i < myResults.length; i++)
+    {
+      console.log(myResults[i]);
     }
-    // alert(lines);
+  
 }
+
+collegeSearch();
+alert(myResults.join('\r\n'))
 </script>
 </html>
